@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pato {
+    width: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.header {
+    background: #f58242;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+.delete-btn {
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.delete-btn:hover {
+    background: #ff4040;
+}
+
+#add-btn {
+    background: #00bf63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#add-btn:hover {
+    background: #222;
+}
