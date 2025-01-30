@@ -24,7 +24,8 @@ public class RequestHandler {
         OutputStream out = clientSocket.getOutputStream();
 
         String requestLine = in.readLine();
-        if (requestLine == null) {
+        if (requestLine == null || requestLine.trim().isEmpty()) {
+            sendBadRequest(out);
             clientSocket.close();
             return;
         }
@@ -32,6 +33,7 @@ public class RequestHandler {
         System.out.println("Solicitud recibida: " + requestLine);
         String[] requestParts = requestLine.split(" ");
         if (requestParts.length < 2) {
+            sendBadRequest(out);
             clientSocket.close();
             return;
         }
@@ -46,6 +48,11 @@ public class RequestHandler {
             String[] headerParts = line.split(": ", 2);
             if (headerParts.length == 2) {
                 headers.put(headerParts[0], headerParts[1]);
+            } else {
+                // Si un encabezado no está bien formado, respondemos con Bad Request
+                sendBadRequest(out);
+                clientSocket.close();
+                return;
             }
         }
 
@@ -60,12 +67,16 @@ public class RequestHandler {
             handlePost(headers, in, out);
         } else if (method.equals("DELETE") && resource.equals("/deleteBook")) {
             handleDelete(headers, in, out);
+        } else {
+            // Si el metodo o la ruta no son válidos, respondemos con Bad Request
+            sendBadRequest(out);
         }
 
         out.close();
         in.close();
         clientSocket.close();
     }
+
 
     /**
      * Envía la lista de libros en formato JSON como respuesta a una solicitud GET.

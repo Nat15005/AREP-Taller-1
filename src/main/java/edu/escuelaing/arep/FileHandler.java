@@ -65,7 +65,7 @@ public class FileHandler {
      * @return El tipo de contenido correspondiente a la extensión del archivo.
      *         Si la extensión no está definida, retorna "application/octet-stream".
      */
-    private static String getContentType(String fileName) {
+    static String getContentType(String fileName) {
         HashMap<String, String> mimeTypes = new HashMap<>();
         mimeTypes.put("html", "text/html");
         mimeTypes.put("css", "text/css");
