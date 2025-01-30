@@ -1,6 +1,6 @@
 # Book Management Server
 
-A simple HTTP server that handles book management operations like adding, deleting, and listing books, implemented in Java. The server responds to HTTP requests with appropriate data, including JSON responses for book information.
+This project implements a simple HTTP server in Java that handles multiple client requests sequentially. The server is capable of reading files from the local disk and serving any requested files, including HTML pages, JavaScript, CSS, and images. It features a basic HTTP server architecture, which processes client requests and sends responses. Additionally, the project incorporates asynchronous communication through REST services in the backend. As a demonstration of the server's functionality, a web application was developed for managing books, allowing users to add, delete, and list books.
 
 ## Getting Started
 
@@ -100,7 +100,13 @@ AREP-Taller-1
 
 Developed by **Natalia Rojas** https://github.com/Nat15005.
 
-### License
+### Acknowledgments
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Java and Networking Documentation - For offering essential references on socket programming.
+
+- Open Source Community - For tools and resources that helped in the development of this project.
+
+- Java and Networking Documentation - For offering essential references on socket programming.
+
+- Open Source Community - For tools and resources that helped in the development of this project.
 
