@@ -53,6 +53,9 @@ You should see the main page of the application.
 
 ![image](https://github.com/user-attachments/assets/ee733dbf-a387-4ed7-b243-9d8bdeaf2666)
 
+![image](https://github.com/user-attachments/assets/f2382c33-b777-4073-8d8f-9a355a512263)
+
+
 
 ### Running Tests
 
@@ -106,7 +109,4 @@ Developed by **Natalia Rojas** https://github.com/Nat15005.
 
 - Open Source Community - For tools and resources that helped in the development of this project.
 
-- Java and Networking Documentation - For offering essential references on socket programming.
-
-- Open Source Community - For tools and resources that helped in the development of this project.
 
