@@ -51,13 +51,8 @@ http://localhost:35000/
 
 You should see the main page of the application.
 
-### API Endpoints
+![image](https://github.com/user-attachments/assets/ee733dbf-a387-4ed7-b243-9d8bdeaf2666)
 
-The server provides the following endpoints for managing books:
-
-- **GET /books** → Returns a list of all books in JSON format.
-- **POST /books?name=BookTitle&author=AuthorName** → Adds a new book.
-- **DELETE /books?name=BookTitle** → Deletes a book by name.
 
 ### Running Tests
 
@@ -66,6 +61,7 @@ To run the unit tests, use the following command:
 ```bash
 mvn test
 ```
+![image](https://github.com/user-attachments/assets/c2143d97-8e98-4700-8a12-555f806fd48c)
 
 ### Project Structure
 
