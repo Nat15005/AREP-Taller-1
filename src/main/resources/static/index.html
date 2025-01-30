@@ -14,14 +14,27 @@
     <div class="header">
         <span>Books to Read</span>
     </div>
-    <ul id="book-list">
-        <li>Cumbres Borrascosas <button class="delete-btn">Delete</button></li>
-        <li>Querida yo, tenemos que hablar <button class="delete-btn">Delete</button></li>
-        <li>Cumbres Borrascosas <button class="delete-btn">Delete</button></li>
-        <li>Querida yo, tenemos que hablar <button class="delete-btn">Delete</button></li>
-        <li>Cumbres Borrascosas <button class="delete-btn">Delete</button></li>
-    </ul>
-    <button id="add-btn">Add</button>
+
+    <!-- Tabla para mostrar los libros -->
+    <table id="book-table">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="book-list">
+        <!-- Los libros se agregarán aquí dinámicamente -->
+        </tbody>
+    </table>
+
+    <!-- Formulario para añadir un libro con título y autor -->
+    <form id="add-book-form">
+        <input type="text" id="book-title" placeholder="Enter book title" required>
+        <input type="text" id="book-author" placeholder="Enter author name" required>
+        <button type="submit" id="add-book-btn">Add Book</button>
+    </form>
 </div>
 
 <script src="index.js"></script>
