@@ -125,7 +125,7 @@ public class RequestHandler {
             // Crear un nuevo objeto Book y agregarlo a la lista books
             books.add(new Book(title, author));
         }
-        String response = "HTTP/1.1 200 OK\r\n" +
+        String response = "HTTP/1.1 201 OK\r\n" +
                 "Content-Type: text/plain\r\n" +
                 "\r\n" +
                 "Libro añadido: " + title + " por " + author;
@@ -160,7 +160,7 @@ public class RequestHandler {
         boolean removed = books.removeIf(book -> book.getTitle().equals(title));
 
         // Construir la respuesta HTTP
-        String response = "HTTP/1.1 200 OK\r\n" +
+        String response = "HTTP/1.1 204 OK\r\n" +
                 "Content-Type: text/plain\r\n" +
                 "\r\n" +
                 (removed ? "Libro eliminado: " + title : "Libro no encontrado");
